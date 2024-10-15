@@ -1,1 +1,20 @@
+Access Flow
+    ├── Users (Workers, Directors, Administrators)
+    │    └── Access via Web Browser
+    │         ├── HTTP requests (GET/POST)
+    │         ├── URLs (web addresses)
+    │         │    ├── Worker: `/records/`, `/records/new/`, `/records/edit/`
+    │         │    ├── Director: `/admin/` (Django Admin) + additional views for summaries
+    │         │    └── Admin: `/admin/` (full access to all models)
+    │
+    ├── Web Server (Django)
+    │    ├── Processes user requests (URL routing)
+    │    ├── Authenticates and authorizes users
+    │    ├── Interacts with database models based on CRUD requests
+    │    └── Returns HTML templates or JSON responses
+    │
+    └── Database (PostgreSQL/SQLite)
+         ├── Stores user data, work records, clients, and work types
+         ├── Processes queries from the Django models
+         └── Sends data back to Django for rendering in templates
 
