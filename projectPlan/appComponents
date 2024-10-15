@@ -1,0 +1,22 @@
+Application Components
+    ├── Web Frontend
+    │    ├── HTML, CSS, JavaScript
+    │    ├── Django Templates (for rendering dynamic content)
+    │    └── User Interaction: Form Submissions, Viewing Data, Editing Data
+    │
+    └── Server (Backend)
+         ├── Django Framework (Python)
+         │    ├── URL Routing (urls.py)
+         │    ├── Views (views.py)
+         │    │    ├── Handle user requests (CRUD operations)
+         │    │    └── Authentication, Role-Based Access
+         │    ├── Models (models.py)
+         │    │    └── Interact with the Database (WorkRecords, Clients, Users)
+         │    └── Admin Interface
+         │         ├── Full control over the system (via `/admin`)
+         │         └── Managed by Administrators and Directors
+         │
+         └── Database
+              ├── PostgreSQL (or SQLite for development)
+              ├── Tables: Users, WorkRecords, Clients, WorkTypes
+              └── Handles Data Storage, Retrieval, and Updates
