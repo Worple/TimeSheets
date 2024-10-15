@@ -1,0 +1,26 @@
+Administrator
+    ├── Manages Workers
+    ├── Manages Directors
+    ├── CRUD operations on Clients
+    ├── CRUD operations on Work Types
+    ├── View/Edit all Work Records
+    ├── Access System Logs
+
+Director
+    ├── Manages Workers (add/remove/update)
+    ├── CRUD operations on Clients
+    ├── CRUD operations on Work Types
+    ├── View/Edit all Work Records
+    ├── Access System Logs
+
+Worker
+    ├── Create their own Work Records
+    ├── Edit their own Work Records
+    ├── Delete their own Work Records
+    ├── View their own Work Records
+
+System Components:
+    ├── Clients (managed by Admins and Directors)
+    ├── Work Types (managed by Admins and Directors)
+    ├── Work Records (created/edited by Workers, reviewed by Directors/Admins)
+    ├── System Logs (accessed by Admins and Directors)
